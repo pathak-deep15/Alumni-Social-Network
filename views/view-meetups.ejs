@@ -1,0 +1,47 @@
+<%- include('partials/header') %>
+
+<div class="container centered">
+    <h1 class="display-3"><strong>Upcoming Meetups</strong></h1>
+</div>
+
+
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Organizer</th>
+        <th scope="col">Organizer's email</th>
+        <th scope="col">Organizer contact no.</th>
+        <th scope="col">Date of Meetup</th>
+        <th scope="col">Time of Meetup</th>
+        <th scope="col">Place of Meetup</th>
+        <th scope="col">Specific Batch</th>
+        <th scope="col">Specific Branch</th>
+        <th scope="col">Specific Course</th>
+        <th scope="col">Purpose of Meetup</th>
+      </tr>
+    </thead>
+    <tbody>
+        <% if (meetupsList.length === 0) { %>
+            <p class="lead">No Upcoming Meetups</p>
+        <% } else { %>
+        <% meetupsList.forEach(function(meetup) { %>
+            <tr>
+                <td><%= meetup.name %></td>
+                <td><%= meetup.email %></td>
+                <td><%= meetup.contactNumber %></td>
+                <td><%= meetup.date %></td>
+                <td><%= meetup.time %></td>
+                <td><%= meetup.place %></td>
+                <td><%= meetup.batch %></td>
+                <td><%= meetup.course %></td>
+                <td><%= meetup.branch %></td>
+                <td><%= meetup.purpose %></td>
+            </tr>
+        <% }); %>
+        <% } %>
+      
+      
+    </tbody>
+  </table>
+
+<%- include('partials/footer') %>

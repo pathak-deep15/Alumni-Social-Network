@@ -1,0 +1,50 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+    <h1>Find by IIT BBS details</h1>
+  
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-body">
+  
+            <!-- Makes POST request to /college-details route -->
+            <form action="/find-iitbbs" method="POST">
+              <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" class="form-control" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email">
+              </div>
+              <div class="form-group">
+                <label for="rollNumber">Roll No.</label>
+                <input type="text" class="form-control" name="rollNumber">
+              </div>
+              <div class="form-group">
+                  <lable for="branch">Branch</lable>
+                  <input type="text" class="form-control" name="branch"> 
+              </div>
+              <div class="form-group">
+                <lable for="course">Course</lable>
+                <input type="text" class="form-control" name="course"> 
+            </div>
+              <div class="form-group">
+                <lable for="graduatingYear">Graduating Year</lable>
+                <input type="text" class="form-control" name="graduatingYear"> 
+            </div>
+            <div class="form-group">
+                <lable for="cgpa">CGPA</lable>
+                <input type="text" class="form-control" name="cgpa"> 
+            </div>
+            <button type="submit" class="btn btn-dark">Find Alumni</button>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%- include('partials/footer') %>

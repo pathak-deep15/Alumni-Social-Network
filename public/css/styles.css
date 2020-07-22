@@ -1,0 +1,32 @@
+
+body {
+    background-color: #E8ECEF;
+  }
+  
+  .centered {
+      padding-top: 200px;
+      text-align: center;
+  }
+  
+  .secret-text {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+  }
+  
+  .dashboard {
+    text-align: center;
+    color: black;
+    padding: auto 100 auto auto;
+  }
+
+  .b-dashboard {
+    text-align: center;
+    padding: auto 500px auto auto;
+    margin-top: 100px;
+  }
+
+  .logout {
+    margin-left: 1430px;
+  }

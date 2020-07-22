@@ -1,0 +1,57 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+    <h1>Occupation details</h1>
+  
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-body">
+  
+            <!-- Makes POST request to /college-details route -->
+            <form action="/occupation-details" method="POST">
+              <div class="form-group">
+                  <label for="name">Full Name</label>
+                  <input type="text" class="form-control" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email">
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" class="form-control" name="company">
+              </div>
+              <div class="form-group">
+                  <lable for="location">Job Location</lable>
+                  <input type="text" class="form-control" name="location"> 
+              </div>
+              <div class="form-group">
+                <lable for="designation">Designation</lable>
+                <input type="text" class="form-control" name="designation"> 
+            </div>
+              <div class="form-group">
+                <lable for="joiningYear">Joining year</lable>
+                <input type="text" class="form-control" name="joiningYear"> 
+              </div>
+              <div class="form-group">
+                <lable for="currentlyWorking">Currently working</lable>
+                <input type="text" class="form-control" name="currentlyWorking"> 
+              </div>
+              <div class="form-group">
+                  <lable for="salary">Salary(per annum in Rs)</lable>
+                  <input type="number" class="form-control" name="salary"> 
+              </div>
+            <button type="submit" class="btn btn-dark">Update/Submit</button>
+            </form>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<%- include('partials/footer') %>

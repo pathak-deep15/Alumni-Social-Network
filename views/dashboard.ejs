@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<a class="btn btn-light btn-lg logout" href="/" role="button">Logout</a>
+<div class="jumbotron centered">
+    <div class="container">
+    <h1 class="display-3 dashboard">Welcome<strong> <%= name %></strong></h1>
+    <p class="lead">Dear <%= name%>, Please update your IIT-BBS/Occupation/Higher-Education details if not done yet.</p>
+    <div class="dashboard">
+        <a class="btn btn-light btn-lg" href="/college-details" role="button">IIT BBS Details</a>
+        <a class="btn btn-dark btn-lg" href="/occupation-details" role="button">Occupation Details</a>
+        <a class="btn btn-light btn-lg" href="/higher-education" role="button">Higher Education Details</a>
+        <a class="btn btn-dark btn-lg" href="/network" role="button">Find Others</a>
+        <a class="btn btn-light btn-lg" href="/meetups" role="button">Meetups</a>
+    </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

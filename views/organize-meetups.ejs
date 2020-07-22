@@ -1,0 +1,61 @@
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+    <h1>Organize a new Meetup</h1>
+  
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card">
+          <div class="card-body">
+  
+            <!-- Makes POST request to /register route -->
+            <form action="/organize-meetups" method="POST">
+              <div class="form-group">
+                  <label for="name">Name of the organizer</label>
+                  <input type="text" class="form-control" name="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" name="email">
+              </div>
+              <div class="form-group">
+                <label for="contactNumber">Organizer contact number</label>
+                <input type="text" class="form-control" name="contactNumber">
+              </div>
+              <div class="form-group">
+                  <lable for="date">Date of Meetup</lable>
+                  <input type="date" class="form-control" name="date"> 
+              </div>
+              <div class="form-group">
+                <lable for="time">Time of Meetup</lable>
+                <input type="time" class="form-control" name="time"> 
+              </div>
+              <div class="form-group">
+                <lable for="place">Place of Meetup</lable>
+                <input type="text" class="form-control" name="place"> 
+              </div>
+              <div class="form-group">
+                <lable for="batch">Specific Batch for Meetup</lable>
+                <input type="text" class="form-control" name="batch"> 
+              </div>
+              <div class="form-group">
+                <lable for="course">Specific Course for Meetup</lable>
+                <input type="text" class="form-control" name="course"> 
+              </div>
+              <div class="form-group">
+                <lable for="branch">Specific Branch for Meetup</lable>
+                <input type="text" class="form-control" name="branch"> 
+              </div>
+              <div class="form-group">
+                <lable for="purpose">Purpose of Meetup</lable>
+                <input type="text" class="form-control" name="purpose"> 
+              </div>
+              <button type="submit" class="btn btn-dark">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<%- include('partials/footer') %>
